@@ -1,7 +1,10 @@
 import argparse
 import sys
 
-from homebrew import HomeBrew, __version__
+from homebrew import (
+    HomeBrew,
+    __version__,
+)
 
 
 def parse_args(args):
