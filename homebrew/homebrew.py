@@ -3,7 +3,7 @@ import subprocess
 from collections import defaultdict
 
 from .cache import uses_cache
-from .logger import log
+from .logger import print_overview
 
 
 class HomeBrew:
@@ -62,7 +62,7 @@ class HomeBrew:
 
     @property
     def info(self):
-        log(
+        print_overview(
             self.installed_packages,
             self.packages_not_needed_by_other,
             self.packages_needed_by_other,

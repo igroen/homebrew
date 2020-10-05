@@ -1,7 +1,7 @@
 from homebrew import HomeBrew
 
 
-def test_homebrew(caplog, expected_log_output):
+def test_homebrew(capsys, expected_log_output):
     hb = HomeBrew()
 
     assert len(hb.installed_packages) == 2
@@ -17,5 +17,6 @@ def test_homebrew(caplog, expected_log_output):
     assert hb.package_dependencies == {"bar": ["foo"]}
 
     hb.info
-    caplog_lines = [record.msg for record in caplog.records]
-    assert caplog_lines == expected_log_output
+    captured = capsys.readouterr()
+    lines = captured.out.splitlines()
+    assert lines == expected_log_output
