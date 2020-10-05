@@ -1,14 +1,7 @@
-autopep8
-black
 bumpversion
 flake8
-flake8-isort
-isort
-jedi
 pytest
-rope
+pytest-coverage
 sphinx
 tox
 twine
-watchdog
-yapf

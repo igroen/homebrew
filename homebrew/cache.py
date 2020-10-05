@@ -3,7 +3,7 @@ import os
 from functools import wraps
 
 CACHE_DIR = os.path.join(
-    os.path.expanduser("~/Library/Caches"), __loader__.name.split(".")[0]
+    os.path.expanduser("~/Library/Caches"), __loader__.name.split(".")[0],
 )
 INSTALLED_PATH = os.path.join(CACHE_DIR, "installed.json")
 USES_PATH = os.path.join(CACHE_DIR, "uses.json")

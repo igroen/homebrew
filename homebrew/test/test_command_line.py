@@ -1,4 +1,5 @@
 import pytest
+
 from homebrew import __version__
 from homebrew.command_line import parse_args
 

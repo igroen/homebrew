@@ -1,6 +1,7 @@
 from contextlib import contextmanager
 
 import pytest
+
 from homebrew import HomeBrew
 
 
