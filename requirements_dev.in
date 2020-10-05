@@ -1,7 +1,7 @@
 bumpversion
 flake8
 pytest
-pytest-coverage
+pytest-cov
 sphinx
 tox
 twine
