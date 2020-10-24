@@ -2,8 +2,8 @@ import argparse
 import sys
 
 from homebrew import (
-    HomeBrew,
     __version__,
+    HomeBrew,
 )
 
 
