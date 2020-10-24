@@ -17,7 +17,7 @@ class HomeBrew:
         self._uses = self._get_uses()
 
     def _get_installed(self):
-        result = subprocess.check_output(["brew", "list"])
+        result = subprocess.check_output(["brew", "list", "--formula"])
         installed = result.split()
 
         return [r.decode() for r in installed]
